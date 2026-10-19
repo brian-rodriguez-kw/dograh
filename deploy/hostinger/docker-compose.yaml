@@ -192,6 +192,7 @@ services:
       ENABLE_TELEMETRY: "${ENABLE_TELEMETRY:-true}"
       POSTHOG_API_KEY: "phc_ItizB1dP6yv7ZYobbcqrpxTdbomDA8hJFSEmAMdYvIr"
       POSTHOG_HOST: "https://us.i.posthog.com"
+      ENABLE_SIGNUP: "${ENABLE_SIGNUP:-true}"
     depends_on:
       postgres:
         condition: service_healthy
