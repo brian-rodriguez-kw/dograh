@@ -164,12 +164,16 @@ services:
       # MINIO_BUCKET: "voice-audio"
       # MINIO_SECURE: "false"
 
-      S3_BUCKET: "${S3_BUCKET:?S3_BUCKET required}"
-      S3_REGION: "${S3_REGION:-sa-east-1}"
+      # S3_BUCKET: "${S3_BUCKET:?S3_BUCKET required}"
+      S3_BUCKET: "dograh-101332651339-sa-east-1-an"
+      # S3_REGION: "${S3_REGION:-sa-east-1}"
+      S3_REGION: "sa-east-1"
       S3_SIGNATURE_VERSION: "s3v4"
       S3_ADDRESSING_STYLE: "virtual"
-      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID:?required}"
-      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY:?required}"
+      # AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID:?required}"
+      AWS_ACCESS_KEY_ID: "AKIAJ53CG32YCV4T4ZWA"
+      # AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY:?required}"
+      AWS_SECRET_ACCESS_KEY: "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"
 
       # IMPORTANT: pinned to 1. The image launches FASTAPI_WORKERS as
       # independent uvicorn processes on consecutive ports (8000, 8001, ...)
