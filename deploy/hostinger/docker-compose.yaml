@@ -171,6 +171,8 @@ services:
       AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
       AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
 
+      DEFAULT_ORG_CONCURRENCY_LIMIT: "${DEFAULT_ORG_CONCURRENCY_LIMIT}"
+
       # IMPORTANT: pinned to 1. The image launches FASTAPI_WORKERS as
       # independent uvicorn processes on consecutive ports (8000, 8001, ...)
       # expecting the bundled nginx to least_conn-balance long-lived
